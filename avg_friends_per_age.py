@@ -13,6 +13,8 @@ def parse_line(line):
 lines = sc.textFile("dataset/fakefriends.csv")
 rdd = lines.map(parse_line)
 
+print "KEYS", rdd.keys()
+
 # 25,1411
 # 23 1890
 # 25 108
